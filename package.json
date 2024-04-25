@@ -1,0 +1,23 @@
+{
+  "name": "@nr2p/create-react-template",
+  "version": "0.1.0",
+  "description": "Vite + TS + React + Tailwind boilerplate",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "@nr2p/create-react-template": "./bin/generate-app.js"
+  },
+  "keywords": [
+    "react",
+    "boilerplate",
+    "typescript",
+    "starter"
+  ],
+  "author": "tto9208@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "YOUR_REPO_URL"
+  },
+  "license": "ISC"
+}
