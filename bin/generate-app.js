@@ -1,4 +1,8 @@
 #! /usr/bin/env node
+const { execSync } = require("child_process");
+const path = require("path");
+const fs = require("fs");
+
 const projectName = process.argv[2];
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
@@ -8,10 +12,6 @@ async function main() {
     try {
         console.log("Downloading files...");
         execSync(`git clone --depth 1 ${GIT_REPO} ${projectPath}`); // boiler Plate repo clone
-
-        if (projectName !== ".") {
-            process.chdir(projectPath); // cd project path
-        }
 
         console.log("Installing dependencies...");
         execSync("pnpm install"); // install packages
