@@ -19,5 +19,8 @@
     "type": "git",
     "url": "YOUR_REPO_URL"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3"
+  }
 }
