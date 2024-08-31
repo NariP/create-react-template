@@ -1,6 +1,6 @@
 {
   "name": "@nr2p/create-react-template",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Vite + TS + React + Tailwind boilerplate",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
