@@ -46,7 +46,8 @@ const copyBoilerplate = ({ currentPath, projectName }) => {
 
 	try {
 		// Clone boilerplate to temp directory
-		execSync(`git archive --remote=${GIT_REPO} HEAD | tar -x -C "${tempDir}"`);
+		execSync(`git clone --depth 1 ${GIT_REPO} "${tempDir}"`);
+		fs.rmSync(path.join(tempDir, ".git"), { recursive: true, force: true });
 
 		// Remove .git folder from cloned boilerplate
 		fs.rmSync(path.join(tempDir, ".git"), { recursive: true, force: true });
